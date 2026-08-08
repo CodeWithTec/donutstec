@@ -1,0 +1,1 @@
+<?php require "views/pricing.view.php"; ?>

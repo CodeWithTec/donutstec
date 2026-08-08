@@ -1,0 +1,1 @@
+<?php require "views/admin.view/support.ticket.view.php"; ?>

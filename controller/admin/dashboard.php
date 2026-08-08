@@ -1,0 +1,1 @@
+<?php require "views/admin.view/dashboard.view.php";?>

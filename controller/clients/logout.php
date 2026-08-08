@@ -1,0 +1,1 @@
+<?php require 'views/clients.view/logout.view.php'; ?>   
