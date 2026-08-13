@@ -327,13 +327,13 @@
     </div>
   </div>
 
-  <!-- ADMIN DASHBOARD -->
+  <!-- ADMIN DASHBOARD
   <section id="admin-dashboard" class="py-5 bg-light">
     <div class="container">
       <div class="admin-card" data-aos="fade-up">
         <h4 class="fw-bold mb-4"><i class="fas fa-chart-line me-2 text-primary"></i>Support Dashboard</h4>
         
-        <!-- Charts row -->
+        <!-- Charts row 
         <div class="row g-4 mb-4">
           <div class="col-md-6">
             <h6>Ticket Statistics</h6>
@@ -414,7 +414,7 @@
       </div>
     </div>
   </section>
-
+----------->
   <!-- FOOTER -->
 <?php require 'views/partials/footer.php'; ?>
 

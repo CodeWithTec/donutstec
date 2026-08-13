@@ -46,7 +46,7 @@
           <p class="lead text-muted">Explore our portfolio of successful digital solutions across industries.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#project-grid" class="btn btn-primary rounded-pill px-4">View Projects</a>
-            <a href="#admin-panel" class="btn btn-outline-secondary rounded-pill px-4">Admin Panel</a>
+            <!-- <a href="#admin-panel" class="btn btn-outline-secondary rounded-pill px-4">Admin Panel</a> -->
           </div>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-left">
@@ -215,7 +215,7 @@
     </div>
   </div>
 
-  <!-- ADMIN PANEL (Portfolio Management) -->
+  <!-- ADMIN PANEL (Portfolio Management)
   <section id="admin-panel" class="py-5 bg-light">
     <div class="container">
       <div class="admin-card" data-aos="fade-up">
@@ -273,6 +273,8 @@
       </div>
     </div>
   </section>
+
+-------------->
 
   <!-- ADD PROJECT MODAL -->
   <div class="modal fade" id="addProjectModal" tabindex="-1">

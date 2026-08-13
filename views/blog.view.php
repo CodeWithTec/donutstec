@@ -52,7 +52,7 @@
           <p class="lead text-muted">Stay updated with the latest trends in software development, AI, cloud computing, and digital transformation.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#blog-grid" class="btn btn-primary rounded-pill px-4">Read Articles</a>
-            <a href="#admin-panel" class="btn btn-outline-secondary rounded-pill px-4">Admin Panel</a>
+            <!-- <a href="#admin-panel" class="btn btn-outline-secondary rounded-pill px-4">Admin Panel</a> -->
           </div>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-left">
@@ -284,7 +284,7 @@
     </div>
   </section>
 
-  <!-- ADMIN PANEL (Blog CMS) -->
+  <!-- ADMIN PANEL (Blog CMS) 
   <section id="admin-panel" class="py-5 bg-light">
     <div class="container">
       <div class="admin-card" data-aos="fade-up">
@@ -346,8 +346,8 @@
       </div>
     </div>
   </section>
-
-  <!-- ADD POST MODAL -->
+----------------------------->
+  <!-- ADD POST MODAL
   <div class="modal fade" id="addPostModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content rounded-4">
@@ -380,7 +380,7 @@
       </div>
     </div>
   </div>
-
+---------------->
   <!-- FOOTER -->
 <?php require "views/partials/footer.php"; ?>
 

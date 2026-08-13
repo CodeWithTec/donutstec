@@ -55,8 +55,7 @@ $routers = [
     '/support' => 'controller/support.php',
     '/clientlogin' => 'controller/clientlogin.php',
     '/threeinone' => 'controller/threeinone.php',
-    '/careers' => 'controller/careers.php', // Fixed spelling
-    
+     
     // Admin Routes
     '/admin/dashboard' => 'controller/admin/dashboard.php',
     '/admin/users' => 'controller/admin/users.php',
@@ -112,3 +111,5 @@ if (array_key_exists($currentUri, $routers)) {
         echo "<h1>404 - Page Not Found</h1>";
     }
 }
+
+

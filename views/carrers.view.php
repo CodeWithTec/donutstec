@@ -297,7 +297,7 @@
     </div>
   </section>
 
-  <!-- ADMIN PANEL (Applications Management) -->
+  <!-- ADMIN PANEL (Applications Management) --
   <section id="admin-panel" class="py-5 bg-light">
     <div class="container">
       <div class="admin-card" data-aos="fade-up">
@@ -381,6 +381,8 @@
       </div>
     </div>
   </section>
+
+------------------>
 
   <!-- FOOTER -->
 <?php require 'views/partials/footer.php'; ?>

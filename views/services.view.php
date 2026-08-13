@@ -46,7 +46,7 @@
           <p class="lead text-muted">From concept to deployment, we deliver end-to-end solutions tailored to your business needs.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#service-list" class="btn btn-primary rounded-pill px-4">Explore Services</a>
-            <a href="#contact" class="btn btn-outline-secondary rounded-pill px-4">Request Quote</a>
+            <a href="#quote" class="btn btn-outline-secondary rounded-pill px-4">Request Quote</a>
           </div>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-left">
@@ -184,7 +184,7 @@
   <!-- For brevity, we show 2 detailed examples, but all services would have full sections -->
 
   <!-- QUOTE REQUEST FORM -->
-  <section id="contact" class="py-5 bg-light">
+  <section id="quote" class="py-5 bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8" data-aos="fade-up">

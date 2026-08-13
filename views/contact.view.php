@@ -61,7 +61,7 @@
           <p class="lead text-muted">Have a project in mind? Need support? We're here to help. Reach out to us and let's start a conversation.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#contact-form" class="btn btn-primary rounded-pill px-4">Send Message</a>
-            <a href="#" class="btn btn-outline-secondary rounded-pill px-4"><i class="fas fa-phone me-2"></i>+49 30 123456</a>
+            <a href="tel:+231771625936" class="btn btn-outline-secondary rounded-pill px-4"><i class="fas fa-phone me-2"></i>+231 771 625 936</a>
           </div>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-left">
@@ -86,7 +86,7 @@
                 <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
                 <div>
                   <h6 class="fw-bold">Visit Us</h6>
-                  <p class="text-muted mb-0">123 Tech Park, Berlin 10115, Germany</p>
+                  <p class="text-muted mb-0">Tequah Road, Bushrod Island, Liberia</p>
                 </div>
               </div>
             </div>
@@ -95,8 +95,8 @@
                 <div class="icon-circle"><i class="fas fa-phone"></i></div>
                 <div>
                   <h6 class="fw-bold">Call Us</h6>
-                  <p class="text-muted mb-0">+49 30 123456</p>
-                  <p class="text-muted mb-0">+49 30 789012</p>
+                  <p class="text-muted mb-0">+231 771 625 936</p>
+                  <p class="text-muted mb-0">+231 555 289 902</p>
                 </div>
               </div>
             </div>
@@ -105,8 +105,8 @@
                 <div class="icon-circle"><i class="fas fa-envelope"></i></div>
                 <div>
                   <h6 class="fw-bold">Email Us</h6>
-                  <p class="text-muted mb-0">hello@donutstec.com</p>
                   <p class="text-muted mb-0">support@donutstec.com</p>
+                  <p class="text-muted mb-0">donutstec@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -126,11 +126,11 @@
             <div>
               <h6 class="fw-bold">Follow Us</h6>
               <div class="d-flex gap-2">
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/donutstec" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/donutstec" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=61593152876743" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC9X8QY4lJ5Q5Q5Q5Q5Q5Q5" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/donutstec/" class="social-link"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -145,27 +145,27 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Full Name *</label>
-                  <input type="text" class="form-control" placeholder="John Doe" required />
+                  <input type="text" name="fullname" class="form-control" placeholder="Your Name" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Email Address *</label>
-                  <input type="email" class="form-control" placeholder="john@example.com" required />
+                  <input type="email" name="email" class="form-control" placeholder="youremail@example.com" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Phone Number</label>
-                  <input type="tel" class="form-control" placeholder="+49 30 1234567" />
+                  <input type="tel" name="phone" class="form-control" placeholder="+231 000 000 " />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Company</label>
-                  <input type="text" class="form-control" placeholder="Your Company Name" />
+                  <input type="text" name="company" class="form-control" placeholder="Your Company Name" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Subject *</label>
-                  <input type="text" class="form-control" placeholder="Project Inquiry" required />
+                  <input type="text" name="subject" class="form-control" placeholder="Project Inquiry" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Service Needed</label>
-                  <select class="form-select">
+                  <select class="form-select addEventListener" name="service">
                     <option selected>Select a service</option>
                     <option>Custom Software Development</option>
                     <option>Website Development</option>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Budget Range</label>
-                  <select class="form-select">
+                  <select class="form-select addEventListener" name="budget">
                     <option selected>Select budget</option>
                     <option>$1,000 - $5,000</option>
                     <option>$5,000 - $10,000</option>
@@ -196,8 +196,9 @@
                 </div>
                 <div class="col-12">
                   <label class="form-label fw-semibold">Message *</label>
-                  <textarea class="form-control" rows="5" placeholder="Tell us about your project, requirements, and goals..." required></textarea>
+                  <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project, requirements, and goals..." required></textarea>
                 </div>
+
                 <!-- reCAPTCHA placeholder -->
                 <div class="col-12">
                   <div class="bg-light p-3 rounded-3 text-center text-muted" style="border: 1px solid #e5e7eb;">
@@ -223,7 +224,7 @@
     <div class="container">
       <div class="map-container" data-aos="fade-up">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.834548818768!2d13.404954076591174!3d52.52000637205365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1a9c0b1b7f%3A0x5b3d4b1e2c8f0a6d!2sBerlin!5e0!3m2!1sen!2sde!4v1700000000000!5m2!1sen!2sde" 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5690.278913877774!2d-10.789901894672635!3d6.349395766467126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1786211529240!5m2!1sen!2s" 
           width="100%" 
           height="400" 
           style="border:0;" 
@@ -237,7 +238,7 @@
 
   <!-- WHATSAPP FLOATING BUTTON -->
   <div class="whatsapp-float" data-aos="fade-up" data-aos-delay="200">
-    <a href="https://wa.me/4930123456" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/+231771625936" target="_blank" aria-label="Chat on WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
@@ -325,7 +326,7 @@
         cancelButtonText: 'Cancel'
       }).then((result) => {
         if (result.isConfirmed) {
-          window.open('https://wa.me/4930123456', '_blank');
+          window.open('https://wa.me/+231771625936', '_blank');
         }
       });
     });
