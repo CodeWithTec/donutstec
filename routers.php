@@ -54,7 +54,9 @@ $routers = [
     '/blog' => 'controller/blog.php',
     '/support' => 'controller/support.php',
     '/clientlogin' => 'controller/clientlogin.php',
-    '/threeinone' => 'controller/threeinone.php',
+    '/threeinone' => 'controller/threeinone.php',       
+    '/success-contact' => 'controller/success-contact.php',
+
      
     // Admin Routes
     '/admin/dashboard' => 'controller/admin/dashboard.php',
@@ -67,7 +69,7 @@ $routers = [
     '/admin/projects' => 'controller/admin/projects.php',
     '/admin/logout' => 'controller/admin/logout.php',
     '/admin/clients' => 'controller/admin/clients.php',
-
+ 
  
     // Client Routes
     '/clients/dashboard' => 'controller/clients/dashboard.php',
