@@ -1,4 +1,7 @@
-<?php require "views/partials/header.php"; ?>
+<?php 
+session_start();
+
+require "views/partials/header.php"; ?>
   <style>
     :root {
       --primary: #2563EB;
@@ -63,7 +66,7 @@
         <div class="tab-content">
           <!-- LOGIN TAB -->
           <div class="tab-pane fade show active" id="loginTab">
-            <form id="loginForm">
+            <form id="loginForm" method="POST">
               <div class="mb-3">
                 <label class="form-label fw-semibold">Email Address</label>
                 <input type="email" class="form-control" placeholder="client@example.com" required />
@@ -93,19 +96,35 @@
 
           <!-- REGISTER TAB -->
           <div class="tab-pane fade" id="registerTab">
-            <form id="registerForm">
+            <form method="POST" action="backend/singin_process.php">
               <div class="mb-3">
-                <label class="form-label fw-semibold">Full Name</label>
-                <input type="text" class="form-control" placeholder="John Doe" required />
+                <label class="form-label fw-semibold">First Name</label>
+                <input type="text" name="first_name" class="form-control" placeholder="John Doe" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Last Name</label>
+                <input type="text" name="last_name" class="form-control" placeholder="Doe" required />
               </div>
               <div class="mb-3">
                 <label class="form-label fw-semibold">Email Address</label>
-                <input type="email" class="form-control" placeholder="john@example.com" required />
+                <input type="email" name="email" class="form-control" placeholder="john@example.com" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Company/Business</label>
+                <input type="text" name="company" class="form-control" placeholder="name company" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Company Address</label>
+                <input type="text" name="company_address" class="form-control" placeholder="Company address" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Phone</label>
+                <input type="number" name="phone" class="form-control" placeholder="+231 0000 00" required />
               </div>
               <div class="mb-3">
                 <label class="form-label fw-semibold">Password</label>
                 <div class="input-group">
-                  <input type="password" class="form-control" id="registerPassword" placeholder="Min 8 characters" required />
+                  <input type="password" name="password" class="form-control" id="registerPassword" placeholder="Min 8 characters" required />
                   <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('registerPassword')">
                     <i class="fas fa-eye"></i>
                   </button>
@@ -113,16 +132,15 @@
                 <small class="text-muted">Password must be at least 8 characters with uppercase, lowercase, and number</small>
               </div>
               <div class="mb-3">
-                <label class="form-label fw-semibold">Confirm Password</label>
-                <input type="password" class="form-control" placeholder="Confirm your password" required />
+                <label class="form-label  fw-semibold">Confirm Password</label>
+                <input type="password" name="confrim_password" class="form-control" placeholder="Confirm your password" required />
               </div>
               <div class="mb-3">
-                <label class="form-label fw-semibold">Role</label>
-                <select class="form-select">
-                  <option value="client" selected>Client</option>
-                  <option value="developer">Developer</option>
-                  <option value="agent">Support Agent</option>
-                  <option value="admin">Admin</option>
+                <label class="form-labe fw-semibold">Gender</label>
+                <select class="form-select" name="gender">
+                  <option value="" selected>Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
                 </select>
                 <small class="text-muted">Select the role that best describes your account type</small>
               </div>

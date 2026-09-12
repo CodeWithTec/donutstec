@@ -1,6 +1,5 @@
 <?php 
 require "views/partials/header.php"; 
-require "backend/validations/contact-validation.php";
 ?>
 
   <style>
@@ -145,42 +144,36 @@ require "backend/validations/contact-validation.php";
           <div class="form-container">
             <h3 class="fw-bold mb-3">Send Us a <span class="text-primary">Message</span></h3>
             <p class="text-muted mb-4">Fill in the form below and we'll get back to you within 24 hours.</p>
-            <form method="POST" action="backend/mails/sent_mail.php">
+            <form method="POST" action="">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Full Name *</label>
                   <!-- Error Message -->
-                  <span class="text-danger"><?php echo $nameErr; ?></span>
                   <input type="text" name="name" class="form-control" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Email Address *</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $emailErr; ?></span>
                   <input type="email" name="email" class="form-control" placeholder="youremail@example.com" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Phone Number</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $phoneErr; ?></span>
                   <input type="tel" name="phone" class="form-control" placeholder="+231 000 000 " />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Company</label>
                   <!-- Error Message -->
-                    <span class="text-danger"><?php echo $companyErr; ?></span>
                   <input type="text" name="company" class="form-control" placeholder="Your Company Name" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Subject *</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $subjectErr; ?></span>
                   <input type="text" name="subject" class="form-control" placeholder="Project Inquiry" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Service Needed</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $serviceErr; ?></span>
                   <select class="form-select addEventListener" name="service">
                     <option selected>Select a service</option>
                     <option>Custom Software Development</option>
@@ -201,7 +194,6 @@ require "backend/validations/contact-validation.php";
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Budget Range</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $budgetErr; ?></span>
                   <select class="form-select addEventListener" name="budget">
                     <option selected>Select budget</option>
                     <option>$1,000 - $5,000</option>
@@ -215,7 +207,6 @@ require "backend/validations/contact-validation.php";
                 <div class="col-12">
                   <label class="form-label fw-semibold">Message *</label>
                   <!-- Error Message -->
-                   <span class="text-danger"><?php echo $messageErr; ?></span>
                   <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project, requirements, and goals..." ></textarea>
                 </div>
 

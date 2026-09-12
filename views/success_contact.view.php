@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DonutsTec · Mail Success (Deep Blue)</title>
+  <title>DonutsTec · Mail Success</title>
   <!-- Google Fonts (Poppins & Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -369,7 +369,8 @@
 
     <!-- brand header -->
     <div class="brand">
-      🍩 DonutsTec <span>·</span> 
+        <img src="/assets/images/logo.png" class="" width="45px" height="45px">
+            DonutsTec <span>·</span> 
     </div>
     <div class="sub-headline">
       <i class="fas fa-envelope-open-text" style="margin-right: 6px; opacity: 0.8;"></i> mail sent
@@ -414,7 +415,7 @@
         <i class="fas fa-phone-alt"></i> support
       </a>
       <i class="fas fa-circle" style="font-size: 0.3rem; opacity: 0.3;"></i>
-      <span class="donut-emoji">🍩</span>
+      <span class="donut-emoji"><img src="/assets/images/logo.png" class="" width="20px" height="20px"></span>
     </div>
 
     <!-- subtle tracking id -->
