@@ -38,13 +38,13 @@
 
             <!-- Right Buttons -->
             <div class="d-flex gap-2">
-                <a href="/clientlogin" class="btn btn-primary btn-login">
-                    Client Sign Up
+                <a href="/signup" class="btn btn-outline-primary btn-login">
+                    Sign Up
                 </a>
 
-                <!-- <a href="/signup" class="btn btn-primary btn-signup">
-                    Sign Up
-                </a> -->
+                <a href="/login" class="btn btn-primary btn-signup">
+                    Sign In
+                </a>
             </div>
 
         </div>
@@ -84,12 +84,12 @@
 
         <div class="d-grid gap-2">
             <a href="/clientlogin" class="btn btn-outline-primary">
-                Client Sign Up
-            </a>
-<!-- 
-            <a href="/signup" class="btn btn-primary">
                 Sign Up
-            </a> -->
+            </a>
+
+            <a href="/signin" class="btn btn-primary">
+                Sign In
+            </a>
         </div>
 
     </div>

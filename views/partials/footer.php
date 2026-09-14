@@ -30,9 +30,9 @@
         <div class="col-md-3">
           <h6 class="text-white">Support</h6>
           <ul class="list-unstyled">
-            <li><a href="/threeinone">Help Center</a></li>
-            <li><a href="/threeinone">Privacy Policy</a></li>
-            <li><a href="/threeinone">Terms of Service</a></li>
+            <li><a href="/help-center-legal">Help Center</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
           </ul>
         </div>
       </div>

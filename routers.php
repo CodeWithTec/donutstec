@@ -53,11 +53,10 @@ $routers = [
     '/careers' => 'controller/careers.php', // Fixed spelling
     '/blog' => 'controller/blog.php',
     '/support' => 'controller/support.php',
-    '/clientlogin' => 'controller/clientlogin.php',
-    '/threeinone' => 'controller/threeinone.php',       
+    '/signup' => 'controller/signup.php',
+    '/login' => 'controller/login.php',      
     '/success-contact' => 'controller/success-contact.php',
 
-     
     // Admin Routes
     '/admin/dashboard' => 'controller/admin/dashboard.php',
     '/admin/users' => 'controller/admin/users.php',
@@ -70,7 +69,6 @@ $routers = [
     '/admin/logout' => 'controller/admin/logout.php',
     '/admin/clients' => 'controller/admin/clients.php',
  
- 
     // Client Routes
     '/clients/dashboard' => 'controller/clients/dashboard.php',
     '/clients/projects' => 'controller/clients/project.php',
@@ -80,7 +78,13 @@ $routers = [
     '/clients/settings' => 'controller/clients/settings.php',
     '/clients/logout' => 'controller/clients/logout.php',
     '/clients/profile' => 'controller/clients/profile.php',
-    '/clients/notifications' => 'controller/clients/notifications.php'
+    '/clients/notifications' => 'controller/clients/notifications.php',
+
+    // Others routers 
+    '/terms-of-service' => 'controller/terms-of-service.php',
+    '/privacy-policy' => 'controller/privacy-policy.php',
+    '/help-center-legal' => 'controller/help-center-legal.php',
+    '/reset-password' => 'controller/reset-password.php',
 ];
 
 // Get the current request URI
