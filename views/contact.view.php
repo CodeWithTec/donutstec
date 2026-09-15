@@ -147,66 +147,83 @@ require "views/partials/header.php";
             <form method="POST" action="">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Full Name *</label>
+                  <label class="form-label fw-semibold">Full Name</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['name'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['name']) ?>
+                    </div>
+                  <?php endif; ?>
                   <input type="text" name="name" class="form-control" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Email Address *</label>
+                  <label class="form-label fw-semibold">Email Address</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['email'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['email']) ?>
+                    </div>
+                  <?php endif; ?>
                   <input type="email" name="email" class="form-control" placeholder="youremail@example.com" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Phone Number</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['phone'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['phone']) ?>
+                    </div>
+                  <?php endif; ?>
                   <input type="tel" name="phone" class="form-control" placeholder="+231 000 000 " />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Company</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['company'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['company']) ?>
+                    </div>
+                  <?php endif; ?>
                   <input type="text" name="company" class="form-control" placeholder="Your Company Name" />
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Subject *</label>
+                  <label class="form-label fw-semibold">Subject</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['subject'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['subject']) ?>
+                    </div>
+                  <?php endif; ?>
                   <input type="text" name="subject" class="form-control" placeholder="Project Inquiry" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Service Needed</label>
                   <!-- Error Message -->
-                  <select class="form-select addEventListener" name="service">
-                    <option selected>Select a service</option>
-                    <option>Custom Software Development</option>
-                    <option>Website Development</option>
-                    <option>E-Commerce Solutions</option>
-                    <option>Mobile App Development</option>
-                    <option>UI/UX Design</option>
-                    <option>Cloud Solutions</option>
-                    <option>API Development</option>
-                    <option>Database Design</option>
-                    <option>AI Solutions</option>
-                    <option>Business Automation</option>
-                    <option>Cybersecurity</option>
-                    <option>SEO Optimization</option>
-                    <option>Other</option>
-                  </select>
+                  <?php if (!empty($error_list['service'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['service']) ?>
+                    </div>
+                  <?php endif; ?>
+                  <input type="text" name="service" class="form-control" placeholder="Web Development, App Development, etc." />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Budget Range</label>
                   <!-- Error Message -->
-                  <select class="form-select addEventListener" name="budget">
-                    <option selected>Select budget</option>
-                    <option>$1,000 - $5,000</option>
-                    <option>$5,000 - $10,000</option>
-                    <option>$10,000 - $25,000</option>
-                    <option>$25,000 - $50,000</option>
-                    <option>$50,000+</option>
-                    <option>Not sure yet</option>
-                  </select>
+                  <?php if (!empty($error_list['budget'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['budget']) ?>
+                    </div>
+                  <?php endif; ?>
+                  <input type="text" name="budget" class="form-control" placeholder="$200 - $5000" />
                 </div>
                 <div class="col-12">
-                  <label class="form-label fw-semibold">Message *</label>
+                  <label class="form-label fw-semibold">Message</label>
                   <!-- Error Message -->
+                  <?php if (!empty($error_list['message'])): ?>
+                    <div class="text-danger py-1 px-2 mb-2" role="alert">
+                      <?= htmlspecialchars($error_list['message']) ?>
+                    </div>
+                  <?php endif; ?>
                   <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project, requirements, and goals..." ></textarea>
                 </div>
 
